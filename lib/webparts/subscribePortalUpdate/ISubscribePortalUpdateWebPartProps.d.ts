@@ -1,8 +1,7 @@
 export interface ISubscribePortalUpdateWebPartProps {
     ProductName: string;
     Description: string;
-    PrefixText: string;
-    SuffixText: string;
+    ButtonText: string;
     ListName: string;
     ProductNameColumnName: string;
     HeaderFontSize: number;

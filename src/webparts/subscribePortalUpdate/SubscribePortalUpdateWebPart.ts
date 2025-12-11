@@ -43,12 +43,8 @@ export default class SubscribePortalUpdateWebPart
       this.properties.ListName = 'subscriptionlist';
     }
 
-    if (!this.properties.PrefixText || this.properties.PrefixText.trim().length === 0) {
-      this.properties.PrefixText = 'Subscribe to';
-    }
-
-    if (!this.properties.SuffixText || this.properties.SuffixText.trim().length === 0) {
-      this.properties.SuffixText = 'updates';
+    if (!this.properties.ButtonText || this.properties.ButtonText.trim().length === 0) {
+      this.properties.ButtonText = 'Subscribe';
     }
 
     if (!this.properties.ProductNameColumnName || this.properties.ProductNameColumnName.trim().length === 0) {
@@ -457,12 +453,11 @@ export default class SubscribePortalUpdateWebPart
 
   private _getHtml(): string {
     const product = this.properties.ProductName || '';
-    const prefix = this.properties.PrefixText || 'Subscribe to';
-    const suffix = this.properties.SuffixText || 'updates';
+    const buttonText = this.properties.ButtonText || 'Subscribe';
 
-    const buttonText = this._isSubscribed
-      ? `Unsubscribe from ${product}`
-      : `${prefix} ${product} ${suffix}`.replace(/\s+/g, ' ').trim();
+    const displayButtonText = this._isSubscribed
+      ? `Unsubscribe`
+      : buttonText;
 
     const btnClass = this._isSubscribed ? styles.buttonSecondary : styles.buttonPrimary;
 
@@ -495,7 +490,7 @@ export default class SubscribePortalUpdateWebPart
                 <span class="${styles.spinner}"></span>
                 <span>Processing...</span>
               ` : `
-                <span class="${styles.buttonText}">${escape(buttonText)}</span>
+                <span class="${styles.buttonText}">${escape(displayButtonText)}</span>
               `}
             </button>
           </div>
@@ -597,13 +592,9 @@ export default class SubscribePortalUpdateWebPart
                   label: 'Description',
                   multiline: true
                 }),
-                PropertyPaneTextField('PrefixText', {
-                  label: 'Button Prefix Text',
-                  description: 'Default: "Subscribe to"'
-                }),
-                PropertyPaneTextField('SuffixText', {
-                  label: 'Button Suffix Text',
-                  description: 'Default: "updates"'
+                PropertyPaneTextField('ButtonText', {
+                  label: 'Button Text',
+                  description: 'Default: "Subscribe"'
                 })
               ]
             },
@@ -642,4 +633,3 @@ export default class SubscribePortalUpdateWebPart
     };
   }
 }
-//vishnu
