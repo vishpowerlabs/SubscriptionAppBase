@@ -1,0 +1,63 @@
+{
+  "id": "b6e1781d-7b91-48f8-aa1e-3bafe48cd49d",
+  "alias": "SubscribePortalUpdateWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Advanced"
+      },
+      "title": {
+        "default": "SubscribePortalUpdate"
+      },
+      "description": {
+        "default": "SubscribePortalUpdate description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "SubscribePortalUpdate"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [],
+    "entryModuleId": "subscribe-portal-update-web-part",
+    "scriptResources": {
+      "subscribe-portal-update-web-part": {
+        "type": "path",
+        "path": "subscribe-portal-update-web-part.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.21.1"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+        "version": "1.21.1"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6",
+        "version": "1.21.1"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a",
+        "version": "1.21.1"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "subscribe-portal-update-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/subscribePortalUpdate/SubscribePortalUpdateWebPart.js",
+          "manifest": "./src/webparts/subscribePortalUpdate/SubscribePortalUpdateWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SubscribePortalUpdateWebPartStrings": "lib/webparts/subscribePortalUpdate/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "subscribe-portal-update-client-side-solution",
+    "id": "30e50628-4588-4a80-a01e-a567ffb493f5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SubscribePortalUpdate description"
+      },
+      "longDescription": {
+        "default": "SubscribePortalUpdate description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "subscribe-portal-update Feature",
+        "description": "The feature that activates elements of the subscribe-portal-update solution.",
+        "id": "c62439a7-df6b-4583-a57a-5dafe3eb75e3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/subscribe-portal-update.sppkg"
+  }
+}
