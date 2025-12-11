@@ -13,21 +13,21 @@
   "dependencies": {
     "tslib": "2.6.2",
 
-    "@microsoft/sp-core-library": "1.20.1",
-    "@microsoft/sp-component-base": "1.20.1",
-    "@microsoft/sp-property-pane": "1.20.1",
-    "@microsoft/sp-webpart-base": "1.20.1",
-    "@microsoft/sp-lodash-subset": "1.20.1",
-    "@microsoft/sp-office-ui-fabric-core": "1.20.1"
+    "@microsoft/sp-core-library": "1.21.1",
+    "@microsoft/sp-component-base": "1.21.1",
+    "@microsoft/sp-property-pane": "1.21.1",
+    "@microsoft/sp-webpart-base": "1.21.1",
+    "@microsoft/sp-lodash-subset": "1.21.1",
+    "@microsoft/sp-office-ui-fabric-core": "1.21.1"
   },
   "devDependencies": {
     "@microsoft/rush-stack-compiler-4.7": "0.1.0",
-    "@microsoft/sp-build-web": "1.20.1",
-    "@microsoft/sp-module-interfaces": "1.20.1",
+    "@microsoft/sp-build-web": "1.21.1",
+    "@microsoft/sp-module-interfaces": "1.21.1",
 
     "@rushstack/eslint-config": "2.5.1",
-    "@microsoft/eslint-plugin-spfx": "1.20.1",
-    "@microsoft/eslint-config-spfx": "1.20.1",
+    "@microsoft/eslint-plugin-spfx": "1.21.1",
+    "@microsoft/eslint-config-spfx": "1.21.1",
 
     "@types/webpack-env": "~1.17.0",
     "eslint": "8.7.0",

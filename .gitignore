@@ -1,0 +1,75 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Build output
+dist/
+lib/
+solution/
+temp/
+*.sppkg
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# SharePoint Framework
+config/package-solution.json.backup
+sharepoint/solution/*.sppkg
+.vscode/
+
+# Rush Stack Compiler
+*.js.map
+
+*.js
+!gulpfile.js
+!config/**/*.js
+
+# Build generated files
+dist
+lib
+solution
+temp
+*.sppkg
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# IDEs
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
